@@ -40,12 +40,19 @@ module set_number(
 
     always @(*) begin
         if (add_10) begin
-            if (output_ten_digit == 9) begin
-                output_ten_digit = 0;
+            if (reg_ten_digit == 9) begin
+                reg_ten_digit = 0;
             end else begin
-                output_ten_digit = output_ten_digit + 1;
+                reg_ten_digit = reg_ten_digit + 1;
             end
         end
+        if (sub_10) begin
+            if (reg_ten_digit == 0) begin
+                reg_ten_digit = 9;
+            end else begin
+                reg_ten_digit = reg_ten_digit - 1;
+            end
+            
     end
 
     assign output_ten_digit = reg_ten_digit;
