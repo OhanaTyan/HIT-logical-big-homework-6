@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Mon Nov 20 22:23:40 2023
-# Process ID: 6836
+# Start of session at: Mon Nov 20 22:31:03 2023
+# Process ID: 24636
 # Current directory: D:/Vivado_project/big_homework/big_homework.runs/impl_1
 # Command line: vivado.exe -log main.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source main.tcl -notrace
 # Log file: D:/Vivado_project/big_homework/big_homework.runs/impl_1/main.vdi
@@ -12,12 +12,12 @@
 # Running On: QAQ-20230210ZSW, OS: Windows, CPU Frequency: 1190 MHz, CPU Physical cores: 4, Host memory: 16937 MB
 #-----------------------------------------------------------
 source main.tcl -notrace
-create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 472.102 ; gain = 176.516
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 473.051 ; gain = 179.859
 Command: link_design -top main -part xc7a35tcsg324-3
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
 INFO: [Device 21-403] Loading part xc7a35tcsg324-3
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 869.578 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 869.070 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2023.2
@@ -103,24 +103,22 @@ CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [D:/Vivado_project/big_homework/big_homework.srcs/constrs_1/new/test_is_display_ok.xdc]
 Parsing XDC File [D:/Vivado_project/big_homework/big_homework.srcs/constrs_1/new/con_main.xdc]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [D:/Vivado_project/big_homework/big_homework.srcs/constrs_1/new/con_main.xdc:2]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [D:/Vivado_project/big_homework/big_homework.srcs/constrs_1/new/con_main.xdc:3]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [D:/Vivado_project/big_homework/big_homework.srcs/constrs_1/new/con_main.xdc:5]
 WARNING: [Vivado 12-584] No ports matched 'clk_'. [D:/Vivado_project/big_homework/big_homework.srcs/constrs_1/new/con_main.xdc:6]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [D:/Vivado_project/big_homework/big_homework.srcs/constrs_1/new/con_main.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado_project/big_homework/big_homework.srcs/constrs_1/new/con_main.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 WARNING: [Vivado 12-584] No ports matched 'set'. [D:/Vivado_project/big_homework/big_homework.srcs/constrs_1/new/con_main.xdc:36]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado_project/big_homework/big_homework.srcs/constrs_1/new/con_main.xdc:36]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [D:/Vivado_project/big_homework/big_homework.srcs/constrs_1/new/con_main.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 988.730 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 988.988 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   LDCP => LDCP (GND, LDCE, LUT3(x2), VCC): 1 instance 
 
-7 Infos, 28 Warnings, 31 Critical Warnings and 0 Errors encountered.
+7 Infos, 28 Warnings, 28 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 988.730 ; gain = 516.629
+link_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 988.988 ; gain = 515.938
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
@@ -133,10 +131,10 @@ INFO: [Project 1-461] DRC finished with 1 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1016.699 ; gain = 27.969
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1014.957 ; gain = 25.969
 INFO: [Common 17-83] Releasing license: Implementation
-12 Infos, 28 Warnings, 31 Critical Warnings and 2 Errors encountered.
+12 Infos, 28 Warnings, 28 Critical Warnings and 2 Errors encountered.
 opt_design failed
 ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
 
-INFO: [Common 17-206] Exiting Vivado at Mon Nov 20 22:24:07 2023...
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 20 22:31:30 2023...
