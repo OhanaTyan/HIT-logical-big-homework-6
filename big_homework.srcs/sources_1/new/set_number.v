@@ -39,7 +39,13 @@ module set_number(
     end
 
     always @(*) begin
-
+        if (add_10) begin
+            if (output_ten_digit == 9) begin
+                output_ten_digit = 0;
+            end else begin
+                output_ten_digit = output_ten_digit + 1;
+            end
+        end
     end
 
     assign output_ten_digit = reg_ten_digit;
