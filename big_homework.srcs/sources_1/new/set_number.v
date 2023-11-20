@@ -52,7 +52,31 @@ module set_number(
             end else begin
                 reg_ten_digit = reg_ten_digit - 1;
             end
-            
+        end
+        if (add_01) begin
+            if (reg_one_digit == 9) begin
+                reg_one_digit = 0;
+                if (reg_ten_digit == 9) begin
+                    reg_ten_digit = 0;
+                end else begin
+                    reg_ten_digit = reg_ten_digit + 1;
+                end
+            end else begin
+                reg_one_digit = reg_one_digit + 1;
+            end
+        end
+        if (sub_01) begin
+            if (reg_one_digit == 0) begin
+                reg_one_digit = 9;
+                if (reg_ten_digit == 0) begin
+                    reg_ten_digit = 9;
+                end else begin
+                    reg_ten_digit = reg_ten_digit - 1;
+                end
+            end else begin
+                reg_one_digit = reg_one_digit - 1;
+            end
+        end
     end
 
     assign output_ten_digit = reg_ten_digit;

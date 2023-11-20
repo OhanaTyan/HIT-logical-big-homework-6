@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 
 // passed
-/*module show_two_number(
+module show_two_number(
     input               clk,
     input       [3:0]   input_ten_digit,
     input       [3:0]   input_one_digit,  
@@ -24,8 +24,8 @@
         reg_choose_one_digit = 0;
         reg_choose_ten_digit = 0;   
     end
-*/
-    /*always@(*)
+
+    always@(*)
         case(clk)
         0: begin // 十位
             //reg_output_leds = reg_ten_digit;
@@ -40,8 +40,8 @@
             reg_choose_one_digit = 1;
          end
     endcase
-    */
-    /*
+    
+    
     show_one_number u1(input_ten_digit, wire_ten_digit);
     show_one_number u2(input_one_digit, wire_one_digit);
     //assign reg_ten_digit = wire_ten_digit;
@@ -65,4 +65,3 @@
     //assign choose_ten_digit = reg_choose_ten_digit;
     //assign choose_one_digit = reg_choose_one_digit;
 endmodule
-*/
