@@ -106,7 +106,7 @@ module main(
             end
         end
         if (state == 2) begin
-            if (reg_alert==1 || is_get_answered==1) begin // TODO:
+            if (reg_alert==1 || is_get_answered==1) begin
                 state = 4;
             end
         end
