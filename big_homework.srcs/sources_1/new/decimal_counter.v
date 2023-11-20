@@ -162,7 +162,7 @@ module decimal_counter(
         end
         else if (state && reg_have_read) begin
             if (clk) count_second = count_second + 1;
-            if (count_second == 4) begin 
+            if (count_second == 100000000) begin 
             // TODO: 将这里的 四 改为 一后面八个零
                 count_second = 0;
                 if (reg_one_digit == 4'b0000) begin

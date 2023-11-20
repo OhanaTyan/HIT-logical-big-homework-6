@@ -24,7 +24,7 @@ module answer_handler(
     input   in1,    // R2
     input   in2,    // M4
     input   in3,    // N4
-    input   in4     // R4
+    input   in4,    // R4
     input   reset,  // state[0]
     output wire [3:0]   number_of_competitor,
     output wire         is_get_answered

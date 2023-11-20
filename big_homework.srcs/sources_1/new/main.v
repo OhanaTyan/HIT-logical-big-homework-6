@@ -73,7 +73,7 @@ module main(
     output wire         choose_one_digit_left,  // C2
     output wire         choose_ten_digit_right, // G1
     output wire         choose_one_digit_right, // F1
-    output wire         alert,                  // K2
+    output wire         alert                   // K2
     
 );
 
@@ -106,7 +106,7 @@ module main(
             end
         end
         if (state == 2) begin
-            if (reg_alert==1 || is_get_answered==1) begin // TODO:
+            if (reg_alert==1 || is_get_answered==1) begin
                 state = 4;
             end
         end
