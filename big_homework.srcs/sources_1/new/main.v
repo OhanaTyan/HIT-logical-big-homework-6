@@ -58,7 +58,7 @@ module main(
     input sub_10,   // R17
     input add_01,   // R11
     input sub_01,   // Y1, 
-    input set,      // R15
+    input set_,      // R15
     input clk,      // P17
 
     input in1,      // R2
@@ -87,13 +87,12 @@ module main(
     wire [3:0]  number_show_on_right_ten_digit;
 
     wire [2:0]  number_of_competitor;
-    wire        is_get_answered;
-    wire [7:0]  
+    wire        is_get_answered;  
     
     reg         reg_choose_ten_digit_right;
     reg         reg_choose_one_digit_right;
     reg  [2:0]  state;
-    reg         reg_alert;
+    //reg        reg_alert;
 
     initial begin
         state = 1;
@@ -101,7 +100,7 @@ module main(
 
     always @(*) begin
         if (state == 1) begin
-            if (set) begin
+            if (set_) begin
                 state = 2;
             end
         end
@@ -111,8 +110,8 @@ module main(
             end
         end
         if (state == 4) begin
-            if (set) begin
-                state = 1
+            if (set_) begin
+                state = 1;
             end
        end     
     end
@@ -150,8 +149,8 @@ module main(
         number_show_on_right_ten_digit,
         number_show_on_right_ten_digit,
         output_leds_right,
-        reg_choose_ten_digit_right
-        reg_choose_one_digit_right
+        choose_ten_digit_right,
+        choose_one_digit_right
         //reg_choose_ten_digit_right,
         //reg_choose_one_digit_right
     );
@@ -168,9 +167,9 @@ module main(
 
 //    assign output_leds_right[0] = (leds_number_set_right[0]&&state[0])||
 
-    assign number_show_on_right_ten_digit[0] = (number_set_ten_digit[0]&&state[0])||(number_of_competitor[0]&&~state[2])
-    assign number_show_on_right_ten_digit[1] = (number_set_ten_digit[1]&&state[0])||(number_of_competitor[1]&&~state[2])
-    assign number_show_on_right_ten_digit[2] = (number_set_ten_digit[2]&&state[0])||(number_of_competitor[2]&&~state[2])
+    assign number_show_on_right_ten_digit[0] = (number_set_ten_digit[0]&&state[0])||(number_of_competitor[0]&&~state[2]);
+    assign number_show_on_right_ten_digit[1] = (number_set_ten_digit[1]&&state[0])||(number_of_competitor[1]&&~state[2]);
+    assign number_show_on_right_ten_digit[2] = (number_set_ten_digit[2]&&state[0])||(number_of_competitor[2]&&~state[2]);
 
     assign alert = reg_alert;
     assign choose_ten_digit_right = (reg_choose_ten_digit_right&&state[0])||(1&&state[2]);
