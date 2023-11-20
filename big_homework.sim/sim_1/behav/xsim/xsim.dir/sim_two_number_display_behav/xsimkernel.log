@@ -1,0 +1,7 @@
+Running: xsim.dir/sim_two_number_display_behav/xsimk.exe -simmode gui -wdb sim_two_number_display_behav.wdb -simrunnum 0 -socket 56791
+Design successfully loaded
+Design Loading Memory Usage: 7404 KB (Peak: 7404 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 7912 KB (Peak: 7912 KB)
+Simulation CPU Usage: 46 ms

@@ -1,0 +1,10 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+D:/Vivado_project/big_homework/big_homework.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+D:/Vivado_project/big_homework/big_homework.srcs/sim_1/new/sim_number_counter.v,1700321628,verilog,,,,sim_number_counter,,,,,,,,
+D:/Vivado_project/big_homework/big_homework.srcs/sim_1/new/sim_show_number.v,1699773707,verilog,,,,sim_show_number,,,,,,,,
+D:/Vivado_project/big_homework/big_homework.srcs/sim_1/new/sim_two_number_display.v,1699874527,verilog,,,,sim_two_number_display,,,,,,,,
+D:/Vivado_project/big_homework/big_homework.srcs/sources_1/new/decimal_counter.v,1700321818,verilog,,D:/Vivado_project/big_homework/big_homework.srcs/sim_1/new/sim_number_counter.v,,decimal_counter,,,,,,,,
+D:/Vivado_project/big_homework/big_homework.srcs/sources_1/new/main.v,1699874578,verilog,,D:/Vivado_project/big_homework/big_homework.srcs/sim_1/new/sim_two_number_display.v,,show_one_number;show_two_number,,,,,,,,
