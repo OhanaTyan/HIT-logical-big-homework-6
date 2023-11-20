@@ -1,6 +1,6 @@
-/big_homework.runs
-/big_homework.sum
-/big_homework.hw
-/big_homework.cache
-/big_homework.sim
-/big_homework.ip_user_files
+/big_homework.runs/*
+/big_homework.sum/*
+/big_homework.hw/*
+/big_homework.cache/*
+/big_homework.sim/*
+/big_homework.ip_user_files/*
