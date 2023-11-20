@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Nov 20 21:53:52 2023
+# Process ID: 8272
+# Current directory: D:/Vivado_project/big_homework/big_homework.runs/synth_1
+# Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+# Log file: D:/Vivado_project/big_homework/big_homework.runs/synth_1/main.vds
+# Journal file: D:/Vivado_project/big_homework/big_homework.runs/synth_1\vivado.jou
+# Running On: QAQ-20230210ZSW, OS: Windows, CPU Frequency: 1190 MHz, CPU Physical cores: 4, Host memory: 16937 MB
+#-----------------------------------------------------------
+source main.tcl -notrace
